@@ -1,0 +1,76 @@
+.contact-page {
+    width: 100%;
+    height: 100vh;
+    background: #caddd8;
+    padding: 50px 0px 100px;
+}
+
+.contact-box {
+    width: 580px;
+    height: 900px;
+    background: #fff;
+    margin: auto;
+    padding: 40px 100px;
+}
+
+.contact-box h1 {
+    margin: 20px 0;
+}
+
+.contact-box p {
+    margin: 5px auto;
+}
+
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px;
+}
+
+.contact-inputs input {
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.contact-row {
+    margin: 10px auto;
+}
+
+.logo-img {
+    height: 80px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.contact-box button {
+    width: 580px;
+    height: 72px;
+    color: #000;
+    background: #ADD8E6;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact-account-option span {
+    color: blue;
+    font-weight: 500;
+}
+
+.contact-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: 500;
+}

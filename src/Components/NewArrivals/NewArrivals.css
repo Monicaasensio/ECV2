@@ -1,0 +1,24 @@
+.new-arrivals-section h1 {
+    text-align: center;
+    font-size: 70px;
+    margin: 30px auto;
+    width: 100%;
+    font-weight: 900;
+    padding-bottom: 10px;
+    color: rgb(85, 17, 106);
+    text-shadow: 3px 3px 3px #fff;
+    font-family: oswald;
+    background: #caddd8;
+}
+
+.new-arrivals {
+    margin: 20px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+}
+
+.new-arrivals img {
+    width: 270px;
+    height: 340px;
+}

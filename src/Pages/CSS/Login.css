@@ -1,0 +1,67 @@
+.login-page {
+    width: 100%;
+    height: 80vh;
+    background: #caddd8;
+    padding-top: 100px;
+}
+.login-box {
+    width: 580px;
+    height: 600px;
+    background: #fff;
+    margin: auto;
+    padding: 40px 60px;
+}
+
+.login-box h1 {
+    margin: 20px 0;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+
+.login-inputs input {
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #c9c9c9;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+
+.logo-img {
+    height: 80px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.login-box button {
+    width: 580px;
+    height: 72px;
+    color: #000;
+    background: #ADD8E6;
+    margin-top: 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-account-option span {
+    color: blue;
+    font-weight: 500;
+}
+
+.login-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: 500;
+}
