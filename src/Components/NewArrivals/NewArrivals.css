@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .new-arrivals-section h1 {
     text-align: center;
     font-size: 70px;
@@ -15,10 +19,82 @@
     margin: 20px 170px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px 0px;
     row-gap: 80px;
+    justify-items: center;
 }
 
 .new-arrivals img {
     width: 270px;
     height: 340px;
 }
+
+
+@media screen and (max-width: 480px) {
+    .new-arrivals-section h1 {
+      font-size: 30px;
+    }
+  
+    .new-arrivals {
+      margin: 10px; 
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+  
+    .new-arrivals img {
+        width: 280px; 
+        height: 340px;
+    }
+  }
+  
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .new-arrivals-section h1 {
+      font-size: 40px;
+    }
+  
+    .new-arrivals {
+      margin: 10px;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+    }
+  
+    .new-arrivals img {
+        width: 250px; 
+        height: 320px;
+    }
+  }
+  
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .new-arrivals-section h1 {
+      font-size: 50px;
+    }
+  
+    .new-arrivals {
+      margin: 20px 50px;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 40px;
+    }
+  
+    .new-arrivals img {
+        width: 300px; 
+        height: 360px; 
+    }
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1225px) {
+    .new-arrivals-section h1 {
+      font-size: 60px; 
+    }
+  
+    .new-arrivals {
+      margin: 15px 100px; 
+      grid-template-columns: 1fr 1fr;
+      row-gap: 10px; 
+    }
+  
+    .new-arrivals img {
+      width: 320px; 
+      height: 380px; 
+    }
+  }
+  

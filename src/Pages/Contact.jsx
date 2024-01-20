@@ -3,6 +3,7 @@ import logo1 from '../Components/Assets/small-logo-removebg-preview.png'
 import './CSS/Contact.css'
 
 export default function Contact() {
+
   return (
     <div className='contact-page'>
       <div className="contact-box">
@@ -15,22 +16,22 @@ export default function Contact() {
     <p className="contact-p">
       To place a <strong>Custom Order</strong> please fill out the message box
       with as much detail as possible. If clothing, please take a look at our{" "}
-      <a href="/extras/size.html">Sizing Chart</a> and include your
+      <a href="/about">Sizing Chart</a> and include your
       measurements.
     </p>
     <p className="contact-p">
       Turn around time for <strong>Custom Orders</strong> is about 2-3 weeks.
     </p>
+    <form>
             <div className="contact-inputs">
-            <input type="text" placeholder='First Name' />
-            <input type="text" placeholder='Last Name' />
-            <input type="email" placeholder='Your Email' />
+            <input type="text" placeholder='First Name' required/>
+            <input type="text" placeholder='Last Name' required/>
+            <input type="email" placeholder='Your Email' required/>
         </div>
         <div className="contact-row">
           <label className="form-section">Reason for contact</label>
           <br />
           <label>
-            <input name="group1" id="radio" type="radio" />
             <span>Custom Order</span>
           </label>
           <br />
@@ -55,6 +56,7 @@ export default function Contact() {
         <button className="submit-btn" type="submit" name="action">Submit</button>
 
         <img className="logo-img" src={logo1} alt="mla crochet logo" />
+        </form>
     </div>
     </div>
   )

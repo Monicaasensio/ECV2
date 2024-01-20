@@ -5,12 +5,12 @@ import SizingChart from '../Components/Assets/Women-Sizes-Chart.png'
 export default function About() {
   return (
     <div className='about'>
-        <h1>About MLA</h1>
+            <h1>About MLA</h1>
         <div class="about-me">
             <p>Monica Asensio is a creative and entrepreneurial spirit who embarked on a artsy journey during an extended visit home. With a passion for crafting and an eye for design, Monica decided to take a try at crochet. What started as a simple hobby quickly evolved into a full-fledged venture, where she expertly weaves together her artistic talents and entrepreneurial drive. Monica's dedication and innovative approach has transformed her passion into a successful crochet business. Through her unwavering determination and crafty expertise, Monica has beautifully crocheted her way to success, proving that with dedication and a dash of creativity, one can turn their hobbies into a fulfilling and prosperous career.</p>
         </div>
         <div className="return-policy">
-          <h1>Return Policy</h1>
+            <h1>Return Policy</h1>
           <div class="return-policy">
             <p>At MLA Crochet, we strive to provide our customers with the highest quality crochet items.</p>
             <p>If for any reason you are not completely satisfied with your purchase, please review our return policy below:</p>
@@ -41,13 +41,13 @@ export default function About() {
             <p>This return policy is subject to change without prior notice, so please review it periodically.</p>
             <h2>Conact below for issues with orders/returns</h2>
             <button>Contact Us</button>
-        </div>
+          </div>
         <div className="size-chart">
-        <h1>MLA Sizing Chart</h1>
-        <img src={SizingChart} alt="size chart" />
+            <h1>MLA Sizing Chart</h1>
+            <img src={SizingChart} alt="size chart" />
         <div class="size-btns">
-            <a href="/products-page/products.html"><button>Explore our collection</button></a>
-            <a href="/contact-page/contact.html"><button>Place a custom order</button></a>
+            <a href="/products"><button>Explore our collection</button></a>
+            <a href="/contact"><button>Place a custom order</button></a>
         </div>
         </div>
         </div>

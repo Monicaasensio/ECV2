@@ -2,13 +2,22 @@ import React from 'react'
 import './Newsletter.css'
 
 export default function Newsletter() {
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+
+  }
+
   return (
     <div className='newsletter'>
       <h1>Keep up with us!</h1>
       <p>Subscribe to our newsletter for exclusive offers</p>
       <div>
-        <input type="email" placeholder='Your Email Here' />
-        <button>Subscribe</button>
+        <form onSubmit={handleSubmit}>
+        <input type="email" placeholder='Your Email Here' required/>
+        </form>
+        <button type='submit'>Subscribe</button>
       </div>
     </div>
   )

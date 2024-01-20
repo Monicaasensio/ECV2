@@ -1,10 +1,14 @@
 import React, { useContext } from 'react'
 import './CartItems.css'
-import { ProductContext } from '../../Context/ProductContext'
+import InitialCartContext from '../../Context/CartContext'
 
-export default function CartItems(props) {
+export default function CartItems({name, quantity, price}) {
 
-    const {all_product, cartItems, deleteFromCart, totalAmount} = useContext(ProductContext);
+    const cartCtx = useContext(InitialCartContext);
+    const cartTotal = cartCtx.items.reduce(
+        (totalPrice, item) => totalPrice + item.quantity * item.price,
+        0
+    );
 
   return (
     <div className='cart-items'>
@@ -17,25 +21,23 @@ export default function CartItems(props) {
         <p>Remove</p>
       </div>
       <hr />
-      {all_product.map((e)=> {
-        if(cartItems[e.id]>0) {
-            return <div>
-            <div className="cart-items-format cart-format">
-                <img className="cart-item-icon" src={e.image} alt="" />
-                <p>{e.name}</p>
-                <p>${e.price}</p>
-            <button className='cart-items-quantity'>{cartItems[e.id]}</button>
-            <p>{e.price*cartItems[e.id]}</p>
-            <button className="cart-items-remove" onClick={() => {deleteFromCart(props.id-1)}}>X</button>
+      <div>
+      {cartCtx.items.map((item) => (
+            <div className="cart-items-format cart-format" key={item.id}>
+                <img className="cart-item-icon" src={item.image} alt="cart item" />
+                <p>{item.name}</p>
+                <p>${item.price}</p>
+            <button className='cart-items-quantity'>{item.quantity}</button>
+            <p>{item.price*item.quantity}</p>
+            <button className="cart-items-remove" onClick={() => {cartCtx.removeItem(item.id)}}>X</button>
           </div>
-          <hr/>
+        ))}
+        <hr/>
         </div>
-        } 
-      })}
     <div className="cart-summary">
         <div className="cart-total">
             <h1>Total</h1>
-            <p>${totalAmount()}</p>
+            <p>${cartTotal}</p>
         </div>
         <hr />
         <button>Proceed To Checkout</button>
